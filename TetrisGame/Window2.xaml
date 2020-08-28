@@ -1,0 +1,53 @@
+﻿<Window x:Class="TetrisGame.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TetrisGame"
+        mc:Ignorable="d"
+        Title="Zasady" MinHeight="520" MinWidth="960"  Height="520" Width="960">
+    <Window.Background>
+        <ImageBrush ImageSource="image/ground.jpg"/>
+    </Window.Background>
+    <Grid Width="960" Height="520">
+        <Grid.Background>
+            <ImageBrush/>
+        </Grid.Background>
+        <Image HorizontalAlignment="Left" Source="image/arrows3.png" Height="228" Margin="278,143,0,0" VerticalAlignment="Top" Width="366"/>
+        <Button Content="Wróć" HorizontalAlignment="Left"  Height="89" Margin="34,386,0,0" VerticalAlignment="Top" Width="230" FontSize="24" FontFamily="Rockwell Nova Extra Bold" IsCancel="True" RenderTransformOrigin="0.5,0.5" Click="Button_Click" FontWeight="Bold">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-2"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+            <Button.Background>
+                <ImageBrush ImageSource="image/paper1.jpg"/>
+            </Button.Background>
+        </Button>
+        <Image HorizontalAlignment="Left" Source="image/Curved_Arrow.png" Height="100" Margin="439,354,0,0" VerticalAlignment="Top" Width="100"/>
+        <Label Content="Przesuń w Dół" HorizontalAlignment="Left" Margin="551,405,0,0" VerticalAlignment="Top" Height="56" Width="272" FontSize="24" FontFamily="Rockwell Nova Extra Bold" FontWeight="Bold"/>
+        <Image HorizontalAlignment="Left"   Height="100" Margin="365,79,0,0" VerticalAlignment="Top" Width="100" MinHeight="3">
+            <Image.Source>
+                <BitmapImage UriSource="/image/Curved_Arrow.png"  Rotation="Rotate180"/>
+            </Image.Source>
+        </Image>
+        <Label Content="Przesuń w Lewo" HorizontalAlignment="Left" Margin="50,194,0,0" VerticalAlignment="Top" Height="76" Width="278" FontFamily="Rockwell Nova Extra Bold" FontSize="24" FontWeight="Bold"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="612,253,0,0" VerticalAlignment="Top" Width="100">
+            <Image.Source>
+                <BitmapImage UriSource="/image/Curved_Arrow2.png"   Rotation="Rotate270"/>
+            </Image.Source>
+        </Image>
+        <Image HorizontalAlignment="Left" Height="100" Margin="201,259,0,0" VerticalAlignment="Top" Width="100">
+            <Image.Source>
+                <BitmapImage UriSource="/image/Curved_Arrow3.png"></BitmapImage>
+            </Image.Source>
+        </Image>
+        <Label Content="Obróć Klocek" HorizontalAlignment="Left" Height="74" Margin="126,87,0,0" VerticalAlignment="Top" Width="257" FontFamily="Rockwell Nova Extra Bold" FontSize="24" FontWeight="Bold"/>
+        <Label Content="Przesuń w Prawo" HorizontalAlignment="Left" Height="48" Margin="634,193,0,0" VerticalAlignment="Top" Width="285" FontFamily="Rockwell Nova Extra Bold" FontSize="24" FontWeight="Bold"/>
+        <Label Content="Tetris Game" HorizontalAlignment="Left" Margin="471,16,0,0" VerticalAlignment="Top" Height="124" Width="472" FontSize="72" FontFamily="Jokerman" FontWeight="Bold"/>
+    </Grid>
+
+</Window>
