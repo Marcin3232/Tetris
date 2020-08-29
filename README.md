@@ -1,2 +1,8 @@
 # Tetris
-tetris na podstawie tutoriali.
+With the help of tutorials
+
+## Technologies
+- C#
+- WPF
+
+## 
